@@ -49,7 +49,7 @@ app.get('/',(req,res)=>{
   // });
 res.render('home.hbs',{
   pageTitle:'HomePage',
-  welcomeMessage:'Welcome to my website',
+  welcomeMessage:'Welcome to my website'
 //  currentYear: new Date().getFullYear()
 });
 });
@@ -57,8 +57,14 @@ res.render('home.hbs',{
 app.get('/about',(req,res)=>{
   //res.send('About Page');
   res.render('about.hbs',{
-    pageTitle:'About Page',
+    pageTitle:'About Page'
     //currentYear:new Date().getFullYear()
+  });
+});
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects'
   });
 });
 
